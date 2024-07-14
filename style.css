@@ -39,8 +39,11 @@
 
 
 .earthimg {
-height: 500px;
-
+height: 300px;
+position: fixed;
+left: 50%;
+top: 57%;
+transform: translate(-50%, -50%);
 
 }
 
@@ -49,12 +52,12 @@ height: 500px;
 
 
 .earthimg:hover {
-height: 510px;
+height: 310px;
 
 }
 
 .earthimg:active {
-height: 520px;
+height: 320px;
 
 }
 
@@ -63,14 +66,14 @@ height: 520px;
 
 .scorelooks {
 color: rgb(255, 0, 0);
-height: 30px;
+height: 25px;
 
 
 }
 
 .scorelooks2 {
   color: rgb(255, 0, 0);
-  height: 5px;
+  height: 0px;
   
   
   }
