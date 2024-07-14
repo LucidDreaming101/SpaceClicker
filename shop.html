@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(0, 0, 0);">
+
+
+<center>
+<body>
+<head>
+    <title>Clicking Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+
+   <h1 style="color: rgb(255, 0, 0); font-size: xx-large;"><a href="index.html" style="text-decoration: none; color: red;">Space Clicker</a></h1>
+</a>
+
+
+<hr style="color: red;">
+
+<h1 class="scorelooks">Score: <span id="score" class="scorelooksA">0</span></h1>
+<h1 class="scorelooks2">Cps: <span id="Cps" class="scorelooksB">0</span></h1>
+
+
+
+<button onclick="buy ()" class="button1">+1/s[<span id="cost">15</span>] - <span id="ammount">0</span></button>
+<button onclick="buy2 ()" class="button2">+100/s[<span id="cost2">500</span>] - <span id="ammount2">0</span></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var score = 0;
+    ClickingPower = 1;
+    
+    var cost = 15;
+    var ammount = 0;
+    var cost2 = 500;
+    var ammount2 = 0;
+    
+    
+    function buy () {
+    if (score >= cost) {
+    score = score - cost;
+    ammount = ammount + 1;
+    cost = Math.round(cost * 1.15);
+    
+    
+    document.getElementById("score").innerHTML = score;
+    document.getElementById("cost").innerHTML = cost;
+    document.getElementById("ammount").innerHTML = ammount;
+    updateCps ();
+    }
+    }
+    
+    
+    
+    
+    function buy2 () {
+    if (score >= cost2) {
+    score = score - cost2;
+    ammount2 = ammount2 + 1;
+    cost2 = Math.round(cost2 * 1.15);
+    
+    
+    document.getElementById("score").innerHTML = score;
+    document.getElementById("cost2").innerHTML = cost2;
+    document.getElementById("ammount2").innerHTML = ammount2;
+    updateCps ();
+    }
+    }
+    
+    
+    
+    
+    function addtoscore(ammount) {
+    score = score + ammount;
+    document.getElementById("score").innerHTML = score;
+    
+    }
+     function updateCps() {
+     Cps = ammount + ammount2 * 5
+    document.getElementById("Cps") .innerHTML = Cps;
+    
+    
+    }
+    
+    
+    setInterval (function() {
+        score = score + ammount;
+        score = score + ammount2;
+        document.getElementById("score").innerHTML = score;
+    }, 1000); // 1000ms does = 1 sec
+    
+    
+    
+    
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</center>
+</body>
+</html>

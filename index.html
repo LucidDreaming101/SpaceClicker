@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(0, 0, 0);">
+
+
+<center>
+<body>
+<head>
+    <title>Clicking Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+
+   <h1 style="color: red; font-size: xx-large;">Space Clicker</h1>
+</a>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Clicking Game For Fun">
+    <meta name="keywords" content="Clicking Game">
+    <meta name="author" content="ThatGuyJosh">
+    <title>Clicking Game</title>
+</head>
+<hr style="color: red;">
+
+<h1 class="scorelooks">Score: <span id="score" class="scorelooksA">0</span></h1>
+<h1 class="scorelooks2">Cps: <span id="Cps" class="scorelooksB">0</span></h1>
+
+
+
+
+<div id="particles-js"></div>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="par.js"></script>
+
+
+
+
+<br>
+<br>
+<img src="earth.png" class="earthimg" onclick="addtoscore(ClickingPower)">
+
+
+
+
+
+
+
+
+
+<button class="button3"><a href="shop.html" style="text-decoration: none; color: black;">SHOP</a></button>
+
+
+<script>
+var score = 0;
+ClickingPower = 1;
+
+
+
+function addtoscore(ammount) {
+score = score + ammount;
+document.getElementById("score").innerHTML = score;
+
+}
+ function updateCps() {
+ Cps = ammount + ammount2 * 5
+document.getElementById("Cps") .innerHTML = Cps;
+
+
+}
+
+
+setInterval (function() {
+    score = score + ammount;
+    score = score + ammount2;
+    document.getElementById("score").innerHTML = score;
+}, 1000);
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</center>
+</body>
+</html>
