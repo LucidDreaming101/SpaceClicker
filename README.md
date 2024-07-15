@@ -1,1 +1,1 @@
-https://luciddreaming101.github.io/SpaceClicker/
+that-guy-josh.github.io/SpaceClicker/
