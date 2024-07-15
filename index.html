@@ -38,8 +38,8 @@
 
 
 
-<br>
-<br>
+
+
 <img src="earth.png" class="earthimg" onclick="addtoscore(ClickingPower)">
 
 
@@ -50,7 +50,21 @@
 
 
 
-<button class="button3"><a href="shop.html" style="text-decoration: none; color: black;">SHOP</a></button>
+<button class="button3"><a href="shop.html" style="text-decoration: none; color: black;" onclick="save">SHOP</a></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <script>
@@ -68,17 +82,12 @@ document.getElementById("score").innerHTML = score;
  Cps = ammount + ammount2 * 5
 document.getElementById("Cps") .innerHTML = Cps;
 
-
 }
 
 
-setInterval (function() {
-    score = score + ammount;
-    score = score + ammount2;
-    document.getElementById("score").innerHTML = score;
-}, 1000);
 
 
+localStorage.setItem('scoresave' , 'score');
 
 
 </script>

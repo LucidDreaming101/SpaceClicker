@@ -35,16 +35,26 @@
 
 
 
+ /* position: fixed;
+  left: 50%;
+  top: 57%;
+  transform: translate(-50%, -50%); */
+
+
+
+
+
+
 
 
 
 .earthimg {
-height: 300px;
+height: 250px;
 position: fixed;
-left: 50%;
-top: 57%;
-transform: translate(-50%, -50%);
-
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
 }
 
 
@@ -52,12 +62,12 @@ transform: translate(-50%, -50%);
 
 
 .earthimg:hover {
-height: 310px;
+height: 260px;
 
 }
 
 .earthimg:active {
-height: 320px;
+height: 270px;
 
 }
 
@@ -66,15 +76,15 @@ height: 320px;
 
 .scorelooks {
 color: rgb(255, 0, 0);
-height: 25px;
-
+height: 15px;
+font-size: x-large;
 
 }
 
 .scorelooks2 {
   color: rgb(255, 0, 0);
   height: 0px;
-  
+  font-size: x-large;
   
   }
 
@@ -108,11 +118,11 @@ transform: translate(-50%, -50%);
   }
 
   .button3 {
-    height: 45px;
-    width: 100px;
+    height: 35px;
+    width: 90px;
     color: black;
     background-color: red;
-    font-weight: 900;
+    font-weight: 700;
     font-size: x-large;
     border-radius: 15px;
     position: absolute;
